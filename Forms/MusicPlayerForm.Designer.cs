@@ -1,6 +1,6 @@
 ﻿namespace PianoMusicPlayer
 {
-    partial class MusicPlayer
+    partial class MusicPlayerForm
     {
         /// <summary>
         ///  Required designer variable.

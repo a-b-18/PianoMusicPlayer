@@ -1,30 +1,19 @@
 using NAudio.Wave;
 using PianoMusicPlayer.Helpers;
+using PianoMusicPlayer.Models;
 using PianoMusicPlayer.Properties;
 using System.Timers;
 
 namespace PianoMusicPlayer
 {
-    public class ScaleStep
-    {
-        public double StepSize;
-        public Stream[] Notes;
-
-        public ScaleStep(double step, Stream[] notes)
-        {
-            StepSize = step;
-            Notes = notes;
-        }
-    }
-
-    public partial class MusicPlayer : Form
+    public partial class MusicPlayerForm : Form
     {
         private System.Windows.Forms.Timer timer;
         private DateTime timeStarted;
         private TimeSpan timeElapsed;
         private const int defaultInterval = 500;
 
-        public MusicPlayer()
+        public MusicPlayerForm()
         {
             InitializeComponent();
             StartTimer();
